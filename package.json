@@ -1,0 +1,33 @@
+{
+  "name": "simple-boilerplate",
+  "version": "1.0.0",
+  "description": "A simple boilerplate to build static and deploy to GitHub Pages",
+  "main": "builder.js",
+  "scripts": {
+    "start": "parcel ./src/*.html",
+    "build": "node ./builder.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iammalikov/simple-boilerplate.git"
+  },
+  "keywords": [
+    "boilerplate"
+  ],
+  "author": "Ilya Malikov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iammalikov/simple-boilerplate/issues"
+  },
+  "homepage": "https://github.com/iammalikov/simple-boilerplate#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.1.1",
+    "parcel-bundler": "^1.12.3",
+    "sass": "^1.22.9"
+  }
+}
